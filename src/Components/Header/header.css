@@ -1,0 +1,142 @@
+.container{
+    position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  text-align: center;
+  left: 30%;
+  top: 30%;
+  padding: 20px;
+  background: rgba(155, 152, 152, 0.532);
+  backdrop-filter: saturate(180%) blur(10px);
+  border-radius: 5%;
+}
+.centered h1{
+    font-size: 6rem;
+    color: orangered;
+}
+.centered p{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    font-style: italic;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #006d19;
+    color: white;
+}
+.brandtitle{
+    font-size:2rem;
+    margin: .5rem;
+    
+}
+.brandtitle a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+.navlinks ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbar li{
+    list-style: none;
+}
+.navlinks li a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+.navlinks li a:hover{
+    text-decoration: underline;
+    color: orangered;
+}
+
+.toggle-bar{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction:column ;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-bar .bar{
+    height: 3px;
+    width: 100%;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+@media (max-width:600px){
+    .toggle-bar{
+        display: flex;
+    }
+    .navlinks{
+        display: none;
+        width: 100%;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navlinks ul{
+        width: 100%;
+            flex-direction: column;
+    }
+    .navlinks li{
+        text-align: center;
+    }
+    .navlinks li a{
+        padding: .5rem 1rem;
+    }
+    .navlinks.active{
+        display: flex;
+    }
+}
+.input-search{
+    margin-top: 15px;
+}
+.search-part{
+    margin-left: 50%;
+}
+.search-part ul li{
+    display: flex;
+    float: left;
+    padding: 5px;
+    padding-top: 6%;
+    padding-bottom: 15%;
+}
+.searchBtn{
+    border: none;
+    padding: 0;
+    background: none;
+    color: white;
+}
+
+.learnmore{
+    padding: 2%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 4%;
+    background-color: #33cc33;
+    border-radius: 5em;
+}
+.learnmore a{
+    color: white;
+}
+.learnmore a:hover{
+  color: orangered;
+}
+.container img{
+    width: 100%;
+    height: 520px;
+}
+
